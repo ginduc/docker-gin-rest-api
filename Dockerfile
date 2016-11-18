@@ -6,5 +6,7 @@ RUN apk update && apk upgrade && \
 RUN go get github.com/tools/godep
 RUN go get github.com/gin-gonic/gin
 
+RUN mkdir -p /go/src/app
+
 CMD go version
 
